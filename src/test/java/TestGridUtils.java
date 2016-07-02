@@ -26,4 +26,14 @@ public class TestGridUtils {
         Assert.assertEquals(GridUtils.getColor(0,3), 1);
         Assert.assertEquals(GridUtils.getColor(2,1), 1);
     }
+    /**
+     * Test GridUtils.spiralDiagonalSum function.
+     */
+    @Test
+    public void testSpiralDiagonalSum() {
+        Assert.assertEquals(GridUtils.spiralDiagonalSum(2), 10, 0);
+        Assert.assertEquals(GridUtils.spiralDiagonalSum(3), 25, 0);
+        Assert.assertEquals(GridUtils.spiralDiagonalSum(121), 1188521, 0);
+    }
+
 }
