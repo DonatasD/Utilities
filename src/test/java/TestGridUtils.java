@@ -1,9 +1,10 @@
+
 import com.donatasd.utils.GridUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Test class to check {@link GridUtils} functions.
+ * Test class to check {@link com.donatasd.utils.GridUtils} functions.
  *
  * @author Donatas Daubaras
  */
@@ -35,5 +36,4 @@ public class TestGridUtils {
         Assert.assertEquals(GridUtils.spiralDiagonalSum(3), 25, 0);
         Assert.assertEquals(GridUtils.spiralDiagonalSum(121), 1188521, 0);
     }
-
 }
