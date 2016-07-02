@@ -1,7 +1,7 @@
 package com.donatasd.utils;
 
 /**
- * //TODO add file description
+ * Provides various functions for n x n grid (matrix).
  *
  * @author Donatas Daubaras
  */
