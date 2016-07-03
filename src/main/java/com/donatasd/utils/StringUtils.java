@@ -46,4 +46,34 @@ public class StringUtils {
         return new String(charArg);
     }
 
+    /**
+     * Rotates provided String by provided number of positions. If number of positions is positive String will be
+     * rotated clockwise. If number of positions is negative then String will be rotated counterclockwise. If number
+     * of positions is 0 then provided String will be returned.
+     *
+     * @since 1.8
+     * @param str - String that is going to be rotated
+     * @param nPos - number of positions to rotate (positive - clockwise, negative - counterclockwise) str.
+     * @return Rotated String by nPos
+     */
+    public static String rotateString(String str, int nPos) {
+        int lenStr = str.length();
+        nPos = nPos % lenStr;
+        if (nPos == 0) {
+            return str;
+        }
+        char[] charStr = str.toCharArray();
+        char[] result = new char[lenStr];
+
+        for (int i = 0; i < lenStr; i++) {
+            // this will work on java 1.8. For previous versions if check is not needed;
+            int pos = (i + nPos) % lenStr;
+            if (pos < 0) {
+                pos += lenStr;
+            }
+            result[pos] = charStr[i];
+        }
+        return new String(result);
+    }
+
 }

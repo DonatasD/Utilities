@@ -30,4 +30,16 @@ public class TestStringUtils {
         Assert.assertEquals("Even number of characters", StringUtils.swapCharacters("abcd"), "dcba");
     }
 
+    @Test
+    public void testRotateString() {
+        // Check if rotation works counterclockwise (negative number of positions to rotate)
+        Assert.assertEquals("Negative number of positions to rotate", StringUtils.rotateString("abcde", -1), "bcdea");
+        // Check if rotation works clockwise (positive number of positions to rotate)
+        Assert.assertEquals("Positive number of positions to rotate", StringUtils.rotateString("abcde", 1), "eabcd");
+        // Check if rotation works when number of positions to rotate is 0
+        Assert.assertEquals("0 number of positions to rotate", StringUtils.rotateString("abcde", 0), "abcde");
+        // Check if rotation works when number of positions are equal to string length
+        Assert.assertEquals("string length number of positions to rotate", StringUtils.rotateString("abcde", 5), "abcde");
+    }
+
 }
