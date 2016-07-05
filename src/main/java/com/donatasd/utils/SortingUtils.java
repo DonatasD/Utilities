@@ -10,7 +10,6 @@ import java.util.ListIterator;
  */
 public class SortingUtils {
 
-
     /**
      * Insertion sort implementation. Provides such performance (N - size of the given list):
      * Best case: O(N)

@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * TODO Add file description
+ * Test class to check {@link com.donatasd.utils.SortingUtils} functions.
  *
  * @author Donatas Daubaras
  */
